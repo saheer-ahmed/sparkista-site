@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sparkista | Wear your sparkle</title>
+<meta name="description" content="Sparkista - trendy, affordable fashion and accessories. Ships across India.">
+<meta property="og:title" content="Sparkista | Wear your sparkle">
+<meta property="og:description" content="Trendy, affordable style, shipped across India.">
+<meta property="og:url" content="https://sparkista.in">
+<meta name="theme-color" content="#FBF7EF">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23141414'/%3E%3Cpath fill='%23D4A84B' d='M32 6c1 8 4 11 12 12-8 1-11 4-12 12-1-8-4-11-12-12 8-1 11-4 12-12z'/%3E%3Crect x='28' y='34' width='8' height='22' fill='%23D4A84B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF7EF; --panel:#FFFFFF; --gold:#A97A22; --gold-soft:#C69C3B;
+    --cream:#1F1A17; --muted:#5A524B; --line:#E8DFCC;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:var(--bg); color:var(--cream);
+    font-family:'Montserrat',system-ui,sans-serif;
+    min-height:100vh; display:flex; flex-direction:column;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{
+    flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; padding:56px 20px 40px; gap:28px;
+  }
+  .badge{
+    font-size:12px; font-weight:600; letter-spacing:.32em; color:var(--gold);
+    border:1px solid var(--line); border-radius:999px; padding:8px 18px;
+  }
+  .wordmark{
+    font-weight:700; color:var(--gold); letter-spacing:.06em; line-height:1;
+    font-size:clamp(44px,12vw,104px); display:flex; align-items:baseline; justify-content:center;
+  }
+  .wordmark .i{position:relative; color:var(--cream); padding:0 .02em}
+  .wordmark .i svg{
+    position:absolute; left:50%; transform:translateX(-50%);
+    top:-.02em; width:.3em; height:.3em; fill:var(--gold);
+  }
+  .tagline{
+    font-family:'Playfair Display',Georgia,serif; font-style:italic; font-weight:500;
+    font-size:clamp(20px,4.6vw,30px); color:var(--cream);
+  }
+  .lead{max-width:460px; color:var(--muted); font-size:16px; line-height:1.65}
+  .cats{
+    display:flex; flex-wrap:wrap; justify-content:center; gap:10px; max-width:520px;
+  }
+  .cats span{
+    font-size:13px; font-weight:600; letter-spacing:.08em; color:var(--cream);
+    background:var(--panel); border:1px solid var(--line); border-radius:999px; padding:9px 16px;
+  }
+  .cta{display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:4px}
+  .btn{
+    display:inline-flex; align-items:center; gap:10px; text-decoration:none;
+    font-weight:600; font-size:15px; border-radius:12px; padding:15px 24px; min-height:48px;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .btn:active{transform:scale(.98)}
+  .btn-gold{background:var(--gold); color:#FFFFFF}
+  .btn-gold:hover{background:#8f6619}
+  .btn-ghost{border:1px solid var(--gold-soft); color:var(--gold)}
+  .btn-ghost:hover{background:rgba(169,122,34,.08)}
+  .btn svg{width:18px; height:18px}
+  .perks{
+    display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px;
+    background:var(--line); border:1px solid var(--line); border-radius:16px; overflow:hidden;
+    width:100%; max-width:560px; margin-top:12px;
+  }
+  .perks div{background:var(--panel); padding:18px 10px}
+  .cats span,.perks{box-shadow:0 1px 2px rgba(31,26,23,.04)}
+  .perks b{display:block; color:var(--gold); font-size:15px; margin-bottom:4px}
+  .perks small{color:var(--muted); font-size:12px; letter-spacing:.04em}
+  footer{
+    text-align:center; padding:22px 20px 28px; color:var(--muted); font-size:12px;
+    letter-spacing:.06em; border-top:1px solid var(--line);
+  }
+  footer a{color:var(--muted)}
+  @media (max-width:420px){
+    .btn{width:100%; justify-content:center}
+    .perks b{font-size:14px}
+  }
+  @media (max-width:330px){
+    .perks{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="badge">COMING SOON</div>
+
+  <h1 class="wordmark" aria-label="Sparkista">
+    <span>SPARK</span><span class="i">ı<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C13 8 16 11 24 12 16 13 13 16 12 24 11 16 8 13 0 12 8 11 11 8 12 0Z"/></svg></span><span>STA</span>
+  </h1>
+
+  <p class="tagline">Wear your sparkle.</p>
+
+  <p class="lead">Trendy, affordable style for every day and every occasion. Our first collection is almost here, so follow us on Instagram to see it first.</p>
+
+  <div class="cats" aria-label="Collections">
+    <span>Jewellery</span><span>Accessories</span><span>Fashion</span><span>&amp; more</span>
+  </div>
+
+  <div class="cta">
+    <a class="btn btn-gold" href="https://www.instagram.com/sparkista" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+      Follow @sparkista
+    </a>
+    <a class="btn btn-ghost" href="https://ig.me/m/sparkista" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.3 7.6L3 21l1.5-5.4A8.5 8.5 0 1 1 21 12z"/></svg>
+      DM to order
+    </a>
+  </div>
+
+  <div class="perks">
+    <div><b>All India</b><small>Delivery</small></div>
+    <div><b>Handpicked</b><small>Designs</small></div>
+    <div><b>New drops</b><small>Every month</small></div>
+  </div>
+</main>
+
+<footer>
+  © 2026 Sparkista · Mangaluru, India · <a href="mailto:sparkista.official@gmail.com">sparkista.official@gmail.com</a>
+</footer>
+</body>
+</html>
