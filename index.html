@@ -1,131 +1,205 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sparkista | Wear your sparkle</title>
-<meta name="description" content="Sparkista - trendy, affordable fashion and accessories. Ships across India.">
-<meta property="og:title" content="Sparkista | Wear your sparkle">
-<meta property="og:description" content="Trendy, affordable style, shipped across India.">
-<meta property="og:url" content="https://sparkista.in">
-<meta name="theme-color" content="#FBF7EF">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23141414'/%3E%3Cpath fill='%23D4A84B' d='M32 6c1 8 4 11 12 12-8 1-11 4-12 12-1-8-4-11-12-12 8-1 11-4 12-12z'/%3E%3Crect x='28' y='34' width='8' height='22' fill='%23D4A84B'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sparkista · little luxuries, every day</title>
+<meta name="description" content="Sparkista – handpicked anti-tarnish jewellery: necklaces, earrings, rings, bracelets and sets. Gift-ready packaging, All India delivery. DM to order.">
+<meta property="og:title" content="Sparkista · little luxuries, every day"><meta property="og:image" content="https://sparkista.in/img/hero.jpg">
+<link rel="icon" href="img/arch-gold.png">
 <style>
-  :root{
-    --bg:#FBF7EF; --panel:#FFFFFF; --gold:#A97A22; --gold-soft:#C69C3B;
-    --cream:#1F1A17; --muted:#5A524B; --line:#E8DFCC;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{height:100%}
-  body{
-    background:var(--bg); color:var(--cream);
-    font-family:'Montserrat',system-ui,sans-serif;
-    min-height:100vh; display:flex; flex-direction:column;
-    -webkit-font-smoothing:antialiased;
-  }
-  main{
-    flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center;
-    text-align:center; padding:56px 20px 40px; gap:28px;
-  }
-  .badge{
-    font-size:12px; font-weight:600; letter-spacing:.32em; color:var(--gold);
-    border:1px solid var(--line); border-radius:999px; padding:8px 18px;
-  }
-  .wordmark{
-    font-weight:700; color:var(--gold); letter-spacing:.06em; line-height:1;
-    font-size:clamp(44px,12vw,104px); display:flex; align-items:baseline; justify-content:center;
-  }
-  .wordmark .i{position:relative; color:var(--cream); padding:0 .02em}
-  .wordmark .i svg{
-    position:absolute; left:50%; transform:translateX(-50%);
-    top:-.02em; width:.3em; height:.3em; fill:var(--gold);
-  }
-  .tagline{
-    font-family:'Playfair Display',Georgia,serif; font-style:italic; font-weight:500;
-    font-size:clamp(20px,4.6vw,30px); color:var(--cream);
-  }
-  .lead{max-width:460px; color:var(--muted); font-size:16px; line-height:1.65}
-  .cats{
-    display:flex; flex-wrap:wrap; justify-content:center; gap:10px; max-width:520px;
-  }
-  .cats span{
-    font-size:13px; font-weight:600; letter-spacing:.08em; color:var(--cream);
-    background:var(--panel); border:1px solid var(--line); border-radius:999px; padding:9px 16px;
-  }
-  .cta{display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:4px}
-  .btn{
-    display:inline-flex; align-items:center; gap:10px; text-decoration:none;
-    font-weight:600; font-size:15px; border-radius:12px; padding:15px 24px; min-height:48px;
-    transition:transform .15s ease, background .15s ease;
-  }
-  .btn:active{transform:scale(.98)}
-  .btn-gold{background:var(--gold); color:#FFFFFF}
-  .btn-gold:hover{background:#8f6619}
-  .btn-ghost{border:1px solid var(--gold-soft); color:var(--gold)}
-  .btn-ghost:hover{background:rgba(169,122,34,.08)}
-  .btn svg{width:18px; height:18px}
-  .perks{
-    display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px;
-    background:var(--line); border:1px solid var(--line); border-radius:16px; overflow:hidden;
-    width:100%; max-width:560px; margin-top:12px;
-  }
-  .perks div{background:var(--panel); padding:18px 10px}
-  .cats span,.perks{box-shadow:0 1px 2px rgba(31,26,23,.04)}
-  .perks b{display:block; color:var(--gold); font-size:15px; margin-bottom:4px}
-  .perks small{color:var(--muted); font-size:12px; letter-spacing:.04em}
-  footer{
-    text-align:center; padding:22px 20px 28px; color:var(--muted); font-size:12px;
-    letter-spacing:.06em; border-top:1px solid var(--line);
-  }
-  footer a{color:var(--muted)}
-  @media (max-width:420px){
-    .btn{width:100%; justify-content:center}
-    .perks b{font-size:14px}
-  }
-  @media (max-width:330px){
-    .perks{grid-template-columns:1fr}
-  }
-</style>
-</head>
-<body>
-<main>
-  <div class="badge">COMING SOON</div>
+@font-face{font-family:Bodoni;src:url(fonts/bodoni-moda-latin-400-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:Bodoni;font-style:italic;src:url(fonts/bodoni-moda-latin-400-italic.woff2) format('woff2');font-display:swap}
+@font-face{font-family:Mont;font-weight:400;src:url(fonts/montserrat-latin-400-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:Mont;font-weight:500;src:url(fonts/montserrat-latin-500-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:Mont;font-weight:600;src:url(fonts/montserrat-latin-600-normal.woff2) format('woff2');font-display:swap}
+:root{--navy:#1A2238;--gold:#B08A3E;--lgold:#D9B86A;--cream:#F6F0E5;--paper:#FBF8F2;--ink:#1F1A17;--mute:#7d7468}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Mont,system-ui,sans-serif;color:var(--navy);background:var(--paper);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.serif{font-family:Bodoni,Georgia,serif}
+.lbl{font-size:12px;letter-spacing:.38em;font-weight:600;text-transform:uppercase;color:var(--gold)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+/* announcement + nav */
+.ann{background:var(--navy);color:var(--cream);text-align:center;font-size:12px;letter-spacing:.16em;padding:10px 16px}
+.ann b{color:var(--lgold);font-weight:600}
+nav{position:sticky;top:0;z-index:20;background:rgba(251,248,242,.94);backdrop-filter:blur(8px);border-bottom:1px solid #ece4d6}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+nav .logo{display:flex;align-items:center;gap:10px}
+nav .logo img{height:34px}
+nav .logo span{font-family:Bodoni,serif;font-size:26px;letter-spacing:.02em}
+nav .links{display:flex;gap:28px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+nav .links a:hover{color:var(--gold)}
+.cta{display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:var(--cream);padding:12px 20px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;border-radius:2px;transition:.2s}
+.cta:hover{background:var(--gold)}
+.cta.ghost{background:transparent;color:var(--navy);border:1px solid var(--navy)}
+.cta.ghost:hover{background:var(--navy);color:var(--cream)}
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr 1fr;min-height:640px;background:var(--cream)}
+.hero .txt{display:flex;flex-direction:column;justify-content:center;padding:60px 8vw 60px max(20px,calc((100vw - 1200px)/2 + 20px))}
+.hero h1{font-family:Bodoni,serif;font-weight:400;font-size:clamp(46px,6vw,84px);line-height:1.02;margin:22px 0}
+.hero h1 i{color:var(--gold)}
+.hero p{color:var(--mute);font-size:16px;line-height:1.7;max-width:440px}
+.hero .btns{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}
+.hero .pic{position:relative;overflow:hidden}
+.hero .pic img{width:100%;height:100%;object-fit:cover;display:block}
+.hero .pic .seal{position:absolute;left:28px;bottom:28px;background:rgba(26,34,56,.82);color:var(--cream);padding:14px 18px;font-size:11px;letter-spacing:.24em;text-transform:uppercase}
+/* usp */
+.usp{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid #ece4d6}
+.usp div{padding:26px 12px;text-align:center;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;border-right:1px solid #ece4d6}
+.usp div:last-child{border-right:none}
+.usp svg{display:block;margin:0 auto 10px;width:26px;height:26px;stroke:var(--gold);fill:none;stroke-width:1.2}
+/* shop */
+section{padding:90px 0}
+.head{text-align:center;margin-bottom:38px}
+.head h2{font-family:Bodoni,serif;font-weight:400;font-size:clamp(36px,4.5vw,56px);margin-top:14px}
+.head h2 i{color:var(--gold)}
+.chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:40px}
+.chip{border:1px solid #d9cfbd;background:transparent;padding:10px 18px;border-radius:40px;font:500 12px Mont;letter-spacing:.16em;text-transform:uppercase;color:var(--navy);cursor:pointer;transition:.2s}
+.chip.on,.chip:hover{background:var(--navy);border-color:var(--navy);color:var(--cream)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:34px 22px}
+.card{cursor:pointer}
+.card .ph{position:relative;aspect-ratio:1;overflow:hidden;background:var(--cream);border-radius:180px 180px 0 0}
+.card .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .7s ease,transform 1.2s ease}
+.card .ph .b{opacity:0;transform:scale(1.08)}
+.card:hover .ph .a,.card.alt .ph .a{opacity:0;transform:scale(1.04)}
+.card:hover .ph .b,.card.alt .ph .b{opacity:1;transform:scale(1)}
+.card .dots{position:absolute;right:14px;bottom:16px;display:flex;gap:5px}
+.card .dots i{width:6px;height:6px;border-radius:50%;background:rgba(251,248,242,.6);transition:.4s}
+.card .dots i:first-child,.card:hover .dots i:last-child,.card.alt .dots i:last-child{background:#fff}
+.card:hover .dots i:first-child,.card.alt .dots i:first-child{background:rgba(251,248,242,.6)}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+.card .code{position:absolute;left:12px;bottom:12px;background:rgba(251,248,242,.9);font-size:10px;letter-spacing:.2em;font-weight:600;padding:6px 9px}
+.card h3{font-family:Bodoni,serif;font-weight:400;font-size:21px;margin-top:16px}
+.card p{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:6px}
+.card .ord{margin-top:12px;font-size:11px;letter-spacing:.2em;font-weight:600;text-transform:uppercase;color:var(--gold);display:inline-block;border-bottom:1px solid var(--gold);padding-bottom:3px}
+/* gift */
+.gift{background:var(--navy);color:var(--cream)}
+.gift .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.gift img{width:100%;display:block;border-radius:4px}
+.gift h2{font-family:Bodoni,serif;font-weight:400;font-size:clamp(40px,5vw,64px);margin:16px 0 20px}
+.gift h2 i{color:var(--lgold)}
+.gift p{color:#c4c6d2;line-height:1.8;font-size:15px}
+.gift ul{list-style:none;margin-top:26px}
+.gift li{padding:12px 0;border-top:1px solid rgba(255,255,255,.12);font-size:14px;letter-spacing:.06em}
+.gift li:before{content:"✦";color:var(--lgold);margin-right:12px}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.step{background:var(--cream);padding:34px 26px;text-align:center}
+.step .n{font-family:Bodoni,serif;font-style:italic;color:var(--gold);font-size:44px}
+.step h4{font-family:Bodoni,serif;font-weight:400;font-size:22px;margin:10px 0}
+.step p{font-size:13px;line-height:1.7;color:var(--mute)}
+/* footer */
+footer{background:#141210;color:#cfc8bb;padding:70px 0 40px;text-align:center}
+footer img{height:110px}
+footer .tg{font-family:Bodoni,serif;font-style:italic;color:var(--lgold);font-size:22px;margin:18px 0 26px}
+footer .soc{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+footer small{display:block;margin-top:40px;font-size:11px;letter-spacing:.18em;color:#7d776d}
+/* modal */
+.mod{position:fixed;inset:0;background:rgba(20,18,16,.6);display:none;align-items:center;justify-content:center;z-index:50;padding:16px}
+.mod.on{display:flex}
+.box{background:var(--paper);max-width:860px;width:100%;display:grid;grid-template-columns:1fr 1fr;max-height:92vh;overflow:auto;position:relative}
+.gal{position:relative;overflow:hidden;background:var(--cream);min-height:320px;aspect-ratio:1}
+.gal .sl{position:absolute;inset:0;opacity:0;transition:opacity .6s ease}
+.gal .sl.on{opacity:1}
+.gal .sl img{width:100%;height:100%;object-fit:cover;display:block}
+.gal .sl.on img{animation:kb 7s ease-out forwards}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.09)}}
+.gal .ar{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:none;background:rgba(251,248,242,.85);color:var(--navy);font-size:20px;cursor:pointer;z-index:2}
+.gal .pv{left:12px}.gal .nx{right:12px}
+.gal .gd{position:absolute;left:0;right:0;bottom:14px;display:flex;justify-content:center;gap:8px;z-index:2}
+.gal .gd i{width:8px;height:8px;border-radius:50%;background:rgba(251,248,242,.6);cursor:pointer;transition:.3s}
+.gal .gd i.on{background:#fff;width:22px;border-radius:4px}
+.gal .cap{position:absolute;left:14px;top:14px;background:rgba(26,34,56,.8);color:var(--cream);font-size:10px;letter-spacing:.22em;padding:7px 10px;z-index:2;text-transform:uppercase}
+.thumbs{display:flex;gap:8px;margin-top:18px}
+.thumbs img{width:58px;height:58px;object-fit:cover;cursor:pointer;opacity:.5;border:1px solid transparent;transition:.3s}
+.thumbs img.on{opacity:1;border-color:var(--gold)}
+.mod .box{transform:translateY(20px);opacity:0;transition:.4s}
+.mod.on .box{transform:none;opacity:1}
+.box .in{padding:44px 36px;display:flex;flex-direction:column;justify-content:center}
+.box h3{font-family:Bodoni,serif;font-weight:400;font-size:36px;margin:12px 0 8px}
+.box .sub{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.box .how{margin:26px 0;font-size:14px;line-height:1.8;color:var(--ink)}
+.box .how b{color:var(--gold)}
+.box .x{position:absolute;top:12px;right:16px;font-size:28px;background:none;border:none;cursor:pointer;color:var(--navy)}
+.box .btns{display:flex;flex-direction:column;gap:10px}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--navy);color:var(--cream);padding:12px 20px;font-size:13px;letter-spacing:.06em;opacity:0;transition:.3s;z-index:60;pointer-events:none}
+.toast.on{opacity:1}
+@media(max-width:900px){
+ nav .links{display:none}
+ .hero{grid-template-columns:1fr}.hero .pic{height:420px;order:-1}.hero .txt{padding:44px 20px}
+ .usp{grid-template-columns:1fr 1fr}.usp div:nth-child(2){border-right:none}.usp div{border-bottom:1px solid #ece4d6}
+ .grid{grid-template-columns:1fr 1fr;gap:28px 14px}
+ .card h3{font-size:17px}.card p{font-size:10px;letter-spacing:.1em}
+ .gift .wrap{grid-template-columns:1fr;gap:34px}
+ .steps{grid-template-columns:1fr 1fr}
+ section{padding:64px 0}
+ .box{grid-template-columns:1fr}.gal{max-height:none}.box .in{padding:28px 22px}
+}
+</style></head><body>
+<div class="ann">Anti-tarnish jewellery · <b>Gift-ready packaging</b> · All India delivery</div>
+<nav><div class="wrap"><a class="logo" href="#"><img src="img/arch-gold.png" alt=""><span>Sparkista</span></a>
+<div class="links"><a href="#shop">Shop</a><a href="#gift">Gifting</a><a href="#order">How to order</a></div>
+<a class="cta" href="https://ig.me/m/sparkista" target="_blank" rel="noopener">DM to order</a></div></nav>
 
-  <h1 class="wordmark" aria-label="Sparkista">
-    <span>SPARK</span><span class="i">ı<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C13 8 16 11 24 12 16 13 13 16 12 24 11 16 8 13 0 12 8 11 11 8 12 0Z"/></svg></span><span>STA</span>
-  </h1>
+<header class="hero"><div class="txt"><div class="lbl">Handpicked jewellery</div>
+<h1>Little luxuries,<br><i>every day.</i></h1>
+<p>Anti-tarnish necklaces, earrings, rings and bracelets — chosen to be worn, stacked and gifted. Every order arrives in our signature box.</p>
+<div class="btns"><a class="cta" href="#shop">Shop the collection</a><a class="cta ghost" href="https://instagram.com/sparkista" target="_blank" rel="noopener">@sparkista</a></div></div>
+<div class="pic"><img src="img/hero.jpg" alt="Pearl layered necklace"><div class="seal">SPK-005 · Pearl Layers</div></div></header>
 
-  <p class="tagline">Wear your sparkle.</p>
+<div class="usp">
+<div><svg viewBox="0 0 24 24"><path d="M12 3c.8 5 2 6.2 7 7-5 .8-6.2 2-7 7-.8-5-2-6.2-7-7 5-.8 6.2-2 7-7z"/></svg>Anti-tarnish</div>
+<div><svg viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="11"/><path d="M3 9h18M12 9v11M12 9c-1-4-6-4-4-1M12 9c1-4 6-4 4-1"/></svg>Gift-ready box</div>
+<div><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="17.5" r="1.6"/><circle cx="17" cy="17.5" r="1.6"/></svg>All India delivery</div>
+<div><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg>Order on DM</div></div>
 
-  <p class="lead">Trendy, affordable style for every day and every occasion. Our first collection is almost here, so follow us on Instagram to see it first.</p>
+<section id="shop"><div class="wrap"><div class="head"><div class="lbl">The collection</div><h2>Find your <i>sparkle</i></h2></div>
+<div class="chips" id="chips"></div><div class="grid" id="grid"></div></div></section>
 
-  <div class="cats" aria-label="Collections">
-    <span>Jewellery</span><span>Accessories</span><span>Fashion</span><span>&amp; more</span>
-  </div>
+<section class="gift" id="gift"><div class="wrap"><img src="img/box.jpg" alt="Sparkista navy gift box">
+<div><div class="lbl" style="color:var(--lgold)">Every order</div><h2>Arrives <i>gift-ready.</i></h2>
+<p>Each piece is packed in our signature navy box with the Sparkista emblem in gold — ready to give, or to keep for yourself.</p>
+<ul><li>Navy rigid box with gold foil</li><li>Soft insert that holds every piece</li><li>Thank-you card in every order</li></ul></div></div></section>
 
-  <div class="cta">
-    <a class="btn btn-gold" href="https://www.instagram.com/sparkista" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-      Follow @sparkista
-    </a>
-    <a class="btn btn-ghost" href="https://ig.me/m/sparkista" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.3 7.6L3 21l1.5-5.4A8.5 8.5 0 1 1 21 12z"/></svg>
-      DM to order
-    </a>
-  </div>
+<section id="order"><div class="wrap"><div class="head"><div class="lbl">Simple &amp; personal</div><h2>How to <i>order</i></h2></div>
+<div class="steps">
+<div class="step"><div class="n">i.</div><h4>Find the code</h4><p>Every piece has an SPK code, like SPK-018.</p></div>
+<div class="step"><div class="n">ii.</div><h4>Send us a DM</h4><p>Message the code to @sparkista on Instagram.</p></div>
+<div class="step"><div class="n">iii.</div><h4>Pay securely</h4><p>We confirm availability and price — pay easily via UPI.</p></div>
+<div class="step"><div class="n">iv.</div><h4>Unbox the sparkle</h4><p>Your order ships across India, gift-ready.</p></div>
+</div></div></section>
 
-  <div class="perks">
-    <div><b>All India</b><small>Delivery</small></div>
-    <div><b>Handpicked</b><small>Designs</small></div>
-    <div><b>New drops</b><small>Every month</small></div>
-  </div>
-</main>
+<footer><img src="img/logo-reverse.png" alt="Sparkista"><div class="tg">little luxuries, every day</div>
+<div class="soc"><a class="cta" style="background:var(--gold)" href="https://instagram.com/sparkista" target="_blank" rel="noopener">Instagram</a><a class="cta" style="background:transparent;border:1px solid #5a554d" href="mailto:sparkista.official@gmail.com">Email us</a></div>
+<small>© 2026 SPARKISTA · MANGALURU, INDIA</small></footer>
 
-<footer>
-  © 2026 Sparkista · Mangaluru, India · <a href="mailto:sparkista.official@gmail.com">sparkista.official@gmail.com</a>
-</footer>
-</body>
-</html>
+<div class="mod" id="mod"><div class="box"><button class="x" onclick="closeM()" aria-label="Close">×</button><div class="gal" id="gal"><div class="cap" id="gcap"></div><button class="ar pv" onclick="go(-1)" aria-label="Previous">‹</button><button class="ar nx" onclick="go(1)" aria-label="Next">›</button><div class="gd" id="gd"></div></div>
+<div class="in"><div class="lbl" id="mCat"></div><h3 id="mName"></h3><div class="sub" id="mSub"></div><div class="thumbs" id="th"></div>
+<div class="how">To order, send us the code <b id="mCode"></b> on Instagram. We'll confirm availability and price right away.</div>
+<div class="btns"><a class="cta" id="mDm" href="https://ig.me/m/sparkista" target="_blank" rel="noopener">Copy code &amp; DM on Instagram</a><button class="cta ghost" onclick="closeM()">Keep browsing</button></div></div></div></div>
+<div class="toast" id="toast"></div>
+<script>
+const P=[{"code": "SPK-001", "cat": "Necklaces", "name": "Abstract Wave Pendant Necklace", "sub": "Anti-tarnish \u00b7 Gold tone", "img": "img/spk-001.jpg", "img2": "img/spk-001-b.jpg"}, {"code": "SPK-002", "cat": "Necklaces", "name": "Gold Heart Pendant Necklace", "sub": "Anti-tarnish \u00b7 White shell heart", "img": "img/spk-002.jpg", "img2": "img/spk-002-b.jpg"}, {"code": "SPK-003", "cat": "Necklaces", "name": "Blue Heart Floral Pendant", "sub": "Snake chain \u00b7 Blue heart charm", "img": "img/spk-003.jpg", "img2": "img/spk-003-b.jpg"}, {"code": "SPK-004", "cat": "Necklaces", "name": "Butterfly Shell Square Necklace", "sub": "316L steel \u00b7 Waterproof", "img": "img/spk-004.jpg", "img2": "img/spk-004-b.jpg"}, {"code": "SPK-005", "cat": "Necklaces", "name": "Pearl Layered Necklace", "sub": "Anti-tarnish \u00b7 Stainless steel", "img": "img/spk-005.jpg", "img2": "img/spk-005-b.jpg"}, {"code": "SPK-006", "cat": "Necklaces", "name": "Emerald Layered Necklace", "sub": "Anti-tarnish \u00b7 Green stone", "img": "img/spk-006.jpg", "img2": "img/spk-006-b.jpg"}, {"code": "SPK-007", "cat": "Necklaces", "name": "Crystal Solitaire Pendant", "sub": "Silver tone \u00b7 American diamond", "img": "img/spk-007.jpg", "img2": "img/spk-007-b.jpg"}, {"code": "SPK-008", "cat": "Sets", "name": "Heart Pendant Set", "sub": "Anti-tarnish \u00b7 Necklace + earrings", "img": "img/spk-008.jpg", "img2": "img/spk-008-b.jpg"}, {"code": "SPK-009", "cat": "Sets", "name": "Floral Jewellery Set", "sub": "Anti-tarnish \u00b7 Necklace + earrings", "img": "img/spk-009.jpg", "img2": "img/spk-009-b.jpg"}, {"code": "SPK-010", "cat": "Sets", "name": "Bow Jewellery Set", "sub": "Anti-tarnish \u00b7 Necklace + earrings", "img": "img/spk-010.jpg", "img2": "img/spk-010-b.jpg"}, {"code": "SPK-011", "cat": "Sets", "name": "Mini Bow Jewellery Set", "sub": "Anti-tarnish \u00b7 Necklace + earrings", "img": "img/spk-011.jpg", "img2": "img/spk-011-b.jpg"}, {"code": "SPK-012", "cat": "Earrings", "name": "Triple Bead Drop Earrings", "sub": "316L steel \u00b7 Waterproof", "img": "img/spk-012.jpg", "img2": "img/spk-012-b.jpg"}, {"code": "SPK-013", "cat": "Earrings", "name": "Green Leaf Statement Earrings", "sub": "Enamel \u00b7 Statement piece", "img": "img/spk-013.jpg", "img2": "img/spk-013-b.jpg"}, {"code": "SPK-014", "cat": "Earrings", "name": "Black Enamel Rose Studs", "sub": "Gold tone \u00b7 Everyday studs", "img": "img/spk-014.jpg", "img2": "img/spk-014-b.jpg"}, {"code": "SPK-015", "cat": "Earrings", "name": "Starfish Stud Earrings", "sub": "Anti-tarnish \u00b7 Stainless steel", "img": "img/spk-015.jpg", "img2": "img/spk-015-b.jpg"}, {"code": "SPK-016", "cat": "Earrings", "name": "Triangle Ridge Studs", "sub": "Anti-tarnish \u00b7 Stainless steel", "img": "img/spk-016.jpg", "img2": "img/spk-016-b.jpg"}, {"code": "SPK-017", "cat": "Earrings", "name": "Textured Heart Studs", "sub": "Anti-tarnish \u00b7 Stainless steel", "img": "img/spk-017.jpg", "img2": "img/spk-017-b.jpg"}, {"code": "SPK-018", "cat": "Rings", "name": "Floral Pearl Statement Ring", "sub": "Lilac enamel \u00b7 Pearl centre", "img": "img/spk-018.jpg", "img2": "img/spk-018-b.jpg"}, {"code": "SPK-019", "cat": "Rings", "name": "Flower Adjustable Ring", "sub": "Anti-tarnish \u00b7 Free size", "img": "img/spk-019.jpg", "img2": "img/spk-019-b.jpg"}, {"code": "SPK-020", "cat": "Rings", "name": "Floral Adjustable Ring", "sub": "Gold tone \u00b7 Free size", "img": "img/spk-020.jpg", "img2": "img/spk-020-b.jpg"}, {"code": "SPK-021", "cat": "Rings", "name": "Leaf Sparkle Ring", "sub": "American diamond \u00b7 Adjustable", "img": "img/spk-021.jpg", "img2": "img/spk-021-b.jpg"}, {"code": "SPK-022", "cat": "Rings", "name": "Wave Adjustable Ring", "sub": "Anti-tarnish \u00b7 Free size", "img": "img/spk-022.jpg", "img2": "img/spk-022-b.jpg"}, {"code": "SPK-023", "cat": "Rings", "name": "Open Heart Ring", "sub": "Gold tone \u00b7 Adjustable", "img": "img/spk-023.jpg", "img2": "img/spk-023-b.jpg"}, {"code": "SPK-024", "cat": "Rings", "name": "Leaf Wrap Ring", "sub": "Anti-tarnish \u00b7 Adjustable", "img": "img/spk-024.jpg", "img2": "img/spk-024-b.jpg"}, {"code": "SPK-025", "cat": "Rings", "name": "Clover Spinner Ring", "sub": "Anti-tarnish \u00b7 Rotatable", "img": "img/spk-025.jpg", "img2": "img/spk-025-b.jpg"}, {"code": "SPK-026", "cat": "Rings", "name": "Contemporary Spinner Ring", "sub": "Anti-tarnish \u00b7 Rotatable", "img": "img/spk-026.jpg", "img2": "img/spk-026-b.jpg"}, {"code": "SPK-027", "cat": "Rings", "name": "Star Spinner Ring", "sub": "Anti-tarnish \u00b7 Rotatable", "img": "img/spk-027.jpg", "img2": "img/spk-027-b.jpg"}, {"code": "SPK-028", "cat": "Rings", "name": "Golden Blossom Ring", "sub": "Anti-tarnish \u00b7 Stainless steel", "img": "img/spk-028.jpg", "img2": "img/spk-028-b.jpg"}, {"code": "SPK-029", "cat": "Rings", "name": "Crystal Band Ring", "sub": "Anti-tarnish \u00b7 Adjustable", "img": "img/spk-029.jpg", "img2": "img/spk-029-b.jpg"}, {"code": "SPK-030", "cat": "Rings", "name": "Rose Gold Crown Ring", "sub": "American diamond \u00b7 Adjustable", "img": "img/spk-030.jpg", "img2": "img/spk-030-b.jpg"}, {"code": "SPK-031", "cat": "Rings", "name": "Silver Crown Ring", "sub": "American diamond \u00b7 Adjustable", "img": "img/spk-031.jpg", "img2": "img/spk-031-b.jpg"}, {"code": "SPK-032", "cat": "Bracelets", "name": "Green Stone Tulip Bracelet", "sub": "Anti-tarnish \u00b7 Gold tone", "img": "img/spk-032.jpg", "img2": "img/spk-032-b.jpg"}, {"code": "SPK-033", "cat": "Bracelets", "name": "Pink Tulip Bracelet", "sub": "Anti-tarnish \u00b7 Multicolour stones", "img": "img/spk-033.jpg", "img2": "img/spk-033-b.jpg"}, {"code": "SPK-034", "cat": "Bracelets", "name": "Silver Pink Tulip Bracelet", "sub": "Anti-tarnish \u00b7 Silver tone", "img": "img/spk-034.jpg", "img2": "img/spk-034-b.jpg"}, {"code": "SPK-035", "cat": "Bracelets", "name": "Crystal Charm Bracelet", "sub": "Anti-tarnish \u00b7 Stainless steel", "img": "img/spk-035.jpg", "img2": "img/spk-035-b.jpg"}, {"code": "SPK-036", "cat": "Bracelets", "name": "Daisy Bangle Bracelet", "sub": "Anti-tarnish \u00b7 Stainless steel", "img": "img/spk-036.jpg", "img2": "img/spk-036-b.jpg"}, {"code": "SPK-037", "cat": "Bracelets", "name": "Leaf Cuff Bracelet", "sub": "Anti-tarnish \u00b7 Stainless steel", "img": "img/spk-037.jpg", "img2": "img/spk-037-b.jpg"}, {"code": "SPK-038", "cat": "Bracelets", "name": "Golden Clover Bracelet", "sub": "Anti-tarnish \u00b7 Stainless steel", "img": "img/spk-038.jpg", "img2": "img/spk-038-b.jpg"}, {"code": "SPK-039", "cat": "Bracelets", "name": "Black Clover Bracelet", "sub": "Rose gold \u00b7 Mother of pearl", "img": "img/spk-039.jpg", "img2": "img/spk-039-b.jpg"}, {"code": "SPK-040", "cat": "Bracelets", "name": "Heart Charm Bracelet", "sub": "Anti-tarnish \u00b7 Gold tone", "img": "img/spk-040.jpg", "img2": "img/spk-040-b.jpg"}, {"code": "SPK-041", "cat": "Bracelets", "name": "Crystal Dot Chain Bracelet", "sub": "Gold tone \u00b7 Dainty", "img": "img/spk-041.jpg", "img2": "img/spk-041-b.jpg"}, {"code": "SPK-042", "cat": "Bracelets", "name": "Crystal Line Bangle", "sub": "Gold tone \u00b7 Stone studded", "img": "img/spk-042.jpg", "img2": "img/spk-042-b.jpg"}];
+const cats=['All',...new Set(P.map(p=>p.cat))];let cur='All';
+const $=id=>document.getElementById(id);
+function chips(){$('chips').innerHTML=cats.map(c=>`<button class="chip${c===cur?' on':''}" onclick="setCat('${c}')">${c}</button>`).join('')}
+function grid(){$('grid').innerHTML=P.filter(p=>cur==='All'||p.cat===cur).map(p=>`<div class="card rv" onclick="openM('${p.code}')"><div class="ph"><img class="a" loading="lazy" src="${p.img}" alt="${p.name}"><img class="b" loading="lazy" src="${p.img2}" alt="${p.name} close-up"><span class="code">${p.code}</span><span class="dots"><i></i><i></i></span></div><h3>${p.name}</h3><p>${p.sub}</p><span class="ord">DM to order</span></div>`).join('');obs()}
+function setCat(c){cur=c;chips();grid()}
+let G=[],gi=0,gt;
+function go(d){show((gi+d+G.length)%G.length)}
+function show(i){gi=i;[...$('gal').querySelectorAll('.sl')].forEach((e,k)=>e.classList.toggle('on',k===i));[...$('gd').children].forEach((e,k)=>e.classList.toggle('on',k===i));[...$('th').children].forEach((e,k)=>e.classList.toggle('on',k===i));$('gcap').textContent=G[i][1];clearInterval(gt);gt=setInterval(()=>go(1),4500)}
+function openM(code){const p=P.find(x=>x.code===code);G=[[p.img,'View'],[p.img2,'Close-up'],['img/box.jpg','Arrives gift-ready']];
+ $('gal').querySelectorAll('.sl').forEach(e=>e.remove());const cap=$('gcap');G.forEach(g=>{const d=document.createElement('div');d.className='sl';d.innerHTML='<img src="'+g[0]+'" alt="">';$('gal').insertBefore(d,cap)});
+ $('gd').innerHTML=G.map((g,k)=>'<i onclick="show('+k+')"></i>').join('');$('th').innerHTML=G.map((g,k)=>'<img src="'+g[0]+'" onclick="show('+k+')">').join('');show(0);$('mCat').textContent=p.cat;$('mName').textContent=p.name;$('mSub').textContent=p.sub;$('mCode').textContent=p.code;
+ $('mDm').onclick=()=>{try{navigator.clipboard.writeText('Hi Sparkista! I would like to order '+p.code+' - '+p.name)}catch(e){};toast('Copied "'+p.code+'" — paste it in your DM')};$('mod').classList.add('on')}
+function closeM(){$('mod').classList.remove('on');clearInterval(gt)}
+$('mod').addEventListener('click',e=>{if(e.target.id==='mod')closeM()});
+function toast(t){const e=$('toast');e.textContent=t;e.classList.add('on');setTimeout(()=>e.classList.remove('on'),2600)}
+let sx=0;$('gal').addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});$('gal').addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)go(dx<0?1:-1)});
+document.addEventListener('keydown',e=>{if(!$('mod').classList.contains('on'))return;if(e.key==='Escape')closeM();if(e.key==='ArrowRight')go(1);if(e.key==='ArrowLeft')go(-1)});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+function obs(){document.querySelectorAll('.rv:not(.in)').forEach((e,k)=>{e.style.transitionDelay=(k%4)*80+'ms';io.observe(e)})}
+const touch=matchMedia('(hover:none)').matches;let tick=0;
+if(touch)setInterval(()=>{tick++;document.querySelectorAll('#grid .card').forEach((c,k)=>{if((k+tick)%3===0)c.classList.toggle('alt')})},1600);
+chips();grid();
+</script></body></html>
