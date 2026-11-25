@@ -1,0 +1,344 @@
+[
+ {
+  "code": "SPK-001",
+  "cat": "Necklaces",
+  "name": "Abstract Wave Pendant Necklace",
+  "sub": "Anti-tarnish \u00b7 Gold tone",
+  "img": "img/spk-001.jpg",
+  "img2": "img/spk-001-b.jpg",
+  "mrp": 715,
+  "price": 608
+ },
+ {
+  "code": "SPK-002",
+  "cat": "Necklaces",
+  "name": "Gold Heart Pendant Necklace",
+  "sub": "Anti-tarnish \u00b7 White shell heart",
+  "img": "img/spk-002.jpg",
+  "img2": "img/spk-002-b.jpg",
+  "mrp": 670,
+  "price": 570
+ },
+ {
+  "code": "SPK-003",
+  "cat": "Necklaces",
+  "name": "Blue Heart Floral Pendant",
+  "sub": "Snake chain \u00b7 Blue heart charm",
+  "img": "img/spk-003.jpg",
+  "img2": "img/spk-003-b.jpg",
+  "mrp": 690,
+  "price": 586
+ },
+ {
+  "code": "SPK-004",
+  "cat": "Necklaces",
+  "name": "Butterfly Shell Square Necklace",
+  "sub": "316L steel \u00b7 Waterproof",
+  "img": "img/spk-004.jpg",
+  "img2": "img/spk-004-b.jpg",
+  "mrp": 575,
+  "price": 488
+ },
+ {
+  "code": "SPK-005",
+  "cat": "Necklaces",
+  "name": "Pearl Layered Necklace",
+  "sub": "Anti-tarnish \u00b7 Stainless steel",
+  "img": "img/spk-005.jpg",
+  "img2": "img/spk-005-b.jpg",
+  "price": 590
+ },
+ {
+  "code": "SPK-006",
+  "cat": "Necklaces",
+  "name": "Emerald Layered Necklace",
+  "sub": "Anti-tarnish \u00b7 Green stone",
+  "img": "img/spk-006.jpg",
+  "img2": "img/spk-006-b.jpg",
+  "price": 525
+ },
+ {
+  "code": "SPK-007",
+  "cat": "Necklaces",
+  "name": "Crystal Solitaire Pendant",
+  "sub": "Silver tone \u00b7 American diamond",
+  "img": "img/spk-007.jpg",
+  "img2": "img/spk-007-b.jpg",
+  "price": 485
+ },
+ {
+  "code": "SPK-008",
+  "cat": "Sets",
+  "name": "Heart Pendant Set",
+  "sub": "Anti-tarnish \u00b7 Necklace + earrings",
+  "img": "img/spk-008.jpg",
+  "img2": "img/spk-008-b.jpg",
+  "price": 505
+ },
+ {
+  "code": "SPK-009",
+  "cat": "Sets",
+  "name": "Floral Jewellery Set",
+  "sub": "Anti-tarnish \u00b7 Necklace + earrings",
+  "img": "img/spk-009.jpg",
+  "img2": "img/spk-009-b.jpg",
+  "price": 485
+ },
+ {
+  "code": "SPK-010",
+  "cat": "Sets",
+  "name": "Bow Jewellery Set",
+  "sub": "Anti-tarnish \u00b7 Necklace + earrings",
+  "img": "img/spk-010.jpg",
+  "img2": "img/spk-010-b.jpg",
+  "price": 485
+ },
+ {
+  "code": "SPK-011",
+  "cat": "Sets",
+  "name": "Mini Bow Jewellery Set",
+  "sub": "Anti-tarnish \u00b7 Necklace + earrings",
+  "img": "img/spk-011.jpg",
+  "img2": "img/spk-011-b.jpg",
+  "price": 505
+ },
+ {
+  "code": "SPK-012",
+  "cat": "Earrings",
+  "name": "Triple Bead Drop Earrings",
+  "sub": "316L steel \u00b7 Waterproof",
+  "img": "img/spk-012.jpg",
+  "img2": "img/spk-012-b.jpg",
+  "mrp": 600,
+  "price": 510
+ },
+ {
+  "code": "SPK-013",
+  "cat": "Earrings",
+  "name": "Green Leaf Statement Earrings",
+  "sub": "Enamel \u00b7 Statement piece",
+  "img": "img/spk-013.jpg",
+  "img2": "img/spk-013-b.jpg",
+  "mrp": 345,
+  "price": 294
+ },
+ {
+  "code": "SPK-014",
+  "cat": "Earrings",
+  "name": "Black Enamel Rose Studs",
+  "sub": "Gold tone \u00b7 Everyday studs",
+  "img": "img/spk-014.jpg",
+  "img2": "img/spk-014-b.jpg",
+  "mrp": 230,
+  "price": 196
+ },
+ {
+  "code": "SPK-015",
+  "cat": "Earrings",
+  "name": "Starfish Stud Earrings",
+  "sub": "Anti-tarnish \u00b7 Stainless steel",
+  "img": "img/spk-015.jpg",
+  "img2": "img/spk-015-b.jpg",
+  "price": 205
+ },
+ {
+  "code": "SPK-016",
+  "cat": "Earrings",
+  "name": "Triangle Ridge Studs",
+  "sub": "Anti-tarnish \u00b7 Stainless steel",
+  "img": "img/spk-016.jpg",
+  "img2": "img/spk-016-b.jpg",
+  "price": 205
+ },
+ {
+  "code": "SPK-017",
+  "cat": "Earrings",
+  "name": "Textured Heart Studs",
+  "sub": "Anti-tarnish \u00b7 Stainless steel",
+  "img": "img/spk-017.jpg",
+  "img2": "img/spk-017-b.jpg",
+  "price": 205
+ },
+ {
+  "code": "SPK-018",
+  "cat": "Rings",
+  "name": "Floral Pearl Statement Ring",
+  "sub": "Lilac enamel \u00b7 Pearl centre",
+  "img": "img/spk-018.jpg",
+  "img2": "img/spk-018-b.jpg",
+  "mrp": 530,
+  "price": 450
+ },
+ {
+  "code": "SPK-019",
+  "cat": "Rings",
+  "name": "Flower Adjustable Ring",
+  "sub": "Anti-tarnish \u00b7 Free size",
+  "img": "img/spk-019.jpg",
+  "img2": "img/spk-019-b.jpg",
+  "mrp": 485,
+  "price": 412
+ },
+ {
+  "code": "SPK-020",
+  "cat": "Rings",
+  "name": "Floral Adjustable Ring",
+  "sub": "Gold tone \u00b7 Free size",
+  "img": "img/spk-020.jpg",
+  "img2": "img/spk-020-b.jpg",
+  "price": 170
+ },
+ {
+  "code": "SPK-021",
+  "cat": "Rings",
+  "name": "Leaf Sparkle Ring",
+  "sub": "American diamond \u00b7 Adjustable",
+  "img": "img/spk-021.jpg",
+  "img2": "img/spk-021-b.jpg",
+  "price": 355
+ },
+ {
+  "code": "SPK-023",
+  "cat": "Rings",
+  "name": "Open Heart Ring",
+  "sub": "Gold tone \u00b7 Adjustable",
+  "img": "img/spk-023.jpg",
+  "img2": "img/spk-023-b.jpg",
+  "price": 170
+ },
+ {
+  "code": "SPK-024",
+  "cat": "Rings",
+  "name": "Leaf Wrap Ring",
+  "sub": "Anti-tarnish \u00b7 Adjustable",
+  "img": "img/spk-024.jpg",
+  "img2": "img/spk-024-b.jpg",
+  "price": 275
+ },
+ {
+  "code": "SPK-025",
+  "cat": "Rings",
+  "name": "Clover Spinner Ring",
+  "sub": "Anti-tarnish \u00b7 Rotatable",
+  "img": "img/spk-025.jpg",
+  "img2": "img/spk-025-b.jpg",
+  "price": 460
+ },
+ {
+  "code": "SPK-026",
+  "cat": "Rings",
+  "name": "Contemporary Spinner Ring",
+  "sub": "Anti-tarnish \u00b7 Rotatable",
+  "img": "img/spk-026.jpg",
+  "img2": "img/spk-026-b.jpg",
+  "price": 460
+ },
+ {
+  "code": "SPK-027",
+  "cat": "Rings",
+  "name": "Star Spinner Ring",
+  "sub": "Anti-tarnish \u00b7 Rotatable",
+  "img": "img/spk-027.jpg",
+  "img2": "img/spk-027-b.jpg",
+  "price": 460
+ },
+ {
+  "code": "SPK-028",
+  "cat": "Rings",
+  "name": "Golden Blossom Ring",
+  "sub": "Anti-tarnish \u00b7 Stainless steel",
+  "img": "img/spk-028.jpg",
+  "img2": "img/spk-028-b.jpg",
+  "price": 315
+ },
+ {
+  "code": "SPK-029",
+  "cat": "Rings",
+  "name": "Crystal Band Ring",
+  "sub": "Anti-tarnish \u00b7 Adjustable",
+  "img": "img/spk-029.jpg",
+  "img2": "img/spk-029-b.jpg",
+  "price": 590
+ },
+ {
+  "code": "SPK-030",
+  "cat": "Rings",
+  "name": "Rose Gold Crown Ring",
+  "sub": "American diamond \u00b7 Adjustable",
+  "img": "img/spk-030.jpg",
+  "img2": "img/spk-030-b.jpg",
+  "price": 610
+ },
+ {
+  "code": "SPK-031",
+  "cat": "Rings",
+  "name": "Silver Crown Ring",
+  "sub": "American diamond \u00b7 Adjustable",
+  "img": "img/spk-031.jpg",
+  "img2": "img/spk-031-b.jpg",
+  "price": 610
+ },
+ {
+  "code": "SPK-032",
+  "cat": "Bracelets",
+  "name": "Green Stone Tulip Bracelet",
+  "sub": "Anti-tarnish \u00b7 Gold tone",
+  "img": "img/spk-032.jpg",
+  "img2": "img/spk-032-b.jpg",
+  "price": 590
+ },
+ {
+  "code": "SPK-033",
+  "cat": "Bracelets",
+  "name": "Pink Tulip Bracelet",
+  "sub": "Anti-tarnish \u00b7 Multicolour stones",
+  "img": "img/spk-033.jpg",
+  "img2": "img/spk-033-b.jpg",
+  "price": 590
+ },
+ {
+  "code": "SPK-034",
+  "cat": "Bracelets",
+  "name": "Silver Pink Tulip Bracelet",
+  "sub": "Anti-tarnish \u00b7 Silver tone",
+  "img": "img/spk-034.jpg",
+  "img2": "img/spk-034-b.jpg",
+  "price": 590
+ },
+ {
+  "code": "SPK-037",
+  "cat": "Bracelets",
+  "name": "Leaf Cuff Bracelet",
+  "sub": "Anti-tarnish \u00b7 Stainless steel",
+  "img": "img/spk-037.jpg",
+  "img2": "img/spk-037-b.jpg",
+  "price": 565
+ },
+ {
+  "code": "SPK-038",
+  "cat": "Bracelets",
+  "name": "Golden Clover Bracelet",
+  "sub": "Anti-tarnish \u00b7 Stainless steel",
+  "img": "img/spk-038.jpg",
+  "img2": "img/spk-038-b.jpg",
+  "price": 485
+ },
+ {
+  "code": "SPK-039",
+  "cat": "Bracelets",
+  "name": "Black Clover Bracelet",
+  "sub": "Rose gold \u00b7 Mother of pearl",
+  "img": "img/spk-039.jpg",
+  "img2": "img/spk-039-b.jpg",
+  "price": 355
+ },
+ {
+  "code": "SPK-040",
+  "cat": "Bracelets",
+  "name": "Heart Charm Bracelet",
+  "sub": "Anti-tarnish \u00b7 Gold tone",
+  "img": "img/spk-040.jpg",
+  "img2": "img/spk-040-b.jpg",
+  "price": 485
+ }
+]
