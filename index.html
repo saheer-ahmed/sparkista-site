@@ -262,7 +262,7 @@ function drawBag(){B=B.filter(i=>byC(i.c));saveB();
  if(!B.length){$('bagL').innerHTML='<div class="emp">Your bag is empty.<br>Tap “+ Add to bag” on any piece.</div>';$('bagF').innerHTML='';return}
  $('bagL').innerHTML=B.map((i,k)=>{const p=byC(i.c);return `<div class="li"><img src="${p.img}" alt=""><div><div class="t">${p.name}</div><div class="c">${p.code}</div><div class="q"><button onclick="qty(${k},-1)">−</button>${i.q}<button onclick="qty(${k},1)">+</button></div></div><div><div class="p">${fm(p.price*i.q)}</div><button class="rm" onclick="B.splice(${k},1);drawBag()">Remove</button></div></div>`}).join('');
  $('bagF').innerHTML=`<div class="row"><span>Subtotal</span><span>${fm(total())}</span></div><div class="row"><span>Delivery</span><span>Free</span></div><div class="row tot"><span>Total</span><span>${fm(total())}</span></div>
- <button class="cta" onclick="sendOrder()">Send order on Instagram</button><small>Sends your order with photos to @sparkista in one tap. We confirm availability, then you pay by UPI.</small>`}
+ <button class="cta" onclick="sendOrder()">Send order on Instagram</button><small>Opens our Instagram chat with your order copied. Just paste &amp; send. We confirm availability, then you pay by UPI.</small>`}
 function qty(k,d){B[k].q+=d;if(B[k].q<1)B.splice(k,1);drawBag()}
 function openBag(){drawBag();$('drw').classList.add('on')}function closeBag(){$('drw').classList.remove('on')}
 function msg(){let m='Hi Sparkista! I would like to order:\n';B.forEach(i=>{const p=byC(i.c);m+=`- ${p.code} ${p.name} x${i.q} (${fm(p.price*i.q)})\n  https://sparkista.in/p/${p.code.toLowerCase()}.html\n`});return m+`Total: ${fm(total())} (free delivery)`}
@@ -283,10 +283,7 @@ async function orderCard(){await document.fonts.ready;const W=1080,row=230,H=300
  x.textAlign='center';x.fillStyle='#7d7468';x.font='22px Mont, sans-serif';x.fillText('sparkista.in  ·  @sparkista',W/2,H-40);
  return new Promise(r=>cv.toBlob(b=>r(b),'image/png'))}
 function canFile(){try{return !!(navigator.canShare&&navigator.canShare({files:[new File(['x'],'x.png',{type:'image/png'})]}))}catch(e){return false}}
-function sendOrder(){if(!B.length)return;copyMsg();
- if(!canFile()){toast('Order copied — paste it in the chat ✨');location.href='https://ig.me/m/sparkista';return}
- toast('Preparing your order…');orderCard().then(async blob=>{const file=new File([blob],'sparkista-order.png',{type:'image/png'});
-  try{await navigator.share({files:[file],text:msg()})}catch(e){if(e.name!=='AbortError'){toast('Order copied — paste it in the chat ✨');location.href='https://ig.me/m/sparkista'}}})}
+function sendOrder(){if(!B.length)return;copyMsg();toast('Order copied — paste it in the chat ✨');setTimeout(()=>{location.href='https://ig.me/m/sparkista'},400)}
 saveB();
 
 function fromHash(){const h=location.hash.slice(1).toUpperCase();if(/^SPK-\d{3}$/.test(h)&&P.find(p=>p.code===h))setTimeout(()=>openM(h),300)}
