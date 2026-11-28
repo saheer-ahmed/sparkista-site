@@ -141,7 +141,7 @@ footer small{display:block;margin-top:40px;font-size:11px;letter-spacing:.18em;c
 .mood .big{position:relative;overflow:hidden;aspect-ratio:4/5;display:block}.mood .big img{width:100%;height:100%;object-fit:cover;transition:transform 2.4s cubic-bezier(.2,.7,.2,1)}.mood .big:hover img{transform:scale(1.04)}
 .mood .big .cap{position:absolute;left:32px;bottom:30px;color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.25)}.mood .big .cap .lbl{color:#fff}.mood .big .cap h3{font-family:Bodoni,serif;font-weight:400;font-size:clamp(30px,3vw,44px);margin:10px 0 14px}
 .mood .big .cap span{font-size:11px;letter-spacing:.26em;text-transform:uppercase;border-bottom:1px solid #fff;padding-bottom:5px}
-.mood .g4{display:grid;grid-template-columns:1fr 1fr;gap:34px 22px}.mood .g4 .card .add,.mood .g4 .card .ord{display:none}
+.mood .g4{display:grid;grid-template-columns:1fr 1fr;gap:34px 22px}.mood .g4 .card .ord{display:none}
 .band{position:relative;height:88vh;min-height:520px;overflow:hidden;padding:0}
 .band img{position:absolute;inset:-8% 0;width:100%;height:116%;object-fit:cover;will-change:transform}
 .band .t{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 8vw;color:#fff;background:linear-gradient(90deg,rgba(26,34,56,.55),rgba(26,34,56,0) 60%)}
@@ -154,6 +154,7 @@ footer small{display:block;margin-top:40px;font-size:11px;letter-spacing:.18em;c
 .bagbtn b{position:absolute;top:-4px;right:-6px;background:var(--gold);color:#fff;font:600 10px Mont,sans-serif;min-width:18px;height:18px;border-radius:9px;display:grid;place-items:center;transform:scale(0);transition:.25s}
 .bagbtn b.on{transform:scale(1)}.bagbtn.pop{animation:pop .4s}@keyframes pop{50%{transform:scale(1.25)}}
 .card .add{margin-top:12px;display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:var(--cream);border:0;padding:10px 16px;font:600 11px Mont,sans-serif;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:.2s}
+.card .ph .inb{position:absolute;right:12px;top:12px;background:var(--gold);color:#fff;font:600 10px Mont,sans-serif;letter-spacing:.16em;text-transform:uppercase;padding:6px 9px;z-index:2}
 .card .add:hover{background:var(--gold)}.card .add.in{background:var(--gold)}
 .drw{position:fixed;inset:0;z-index:70;pointer-events:none}
 .drw .sh{position:absolute;inset:0;background:rgba(20,18,16,.5);opacity:0;transition:.3s}
@@ -236,10 +237,10 @@ const off=p=>p.mrp&&p.price&&p.mrp>p.price?Math.round((1-p.price/p.mrp)*100):0;
 const $=id=>document.getElementById(id);
 function chips(){$('chips').innerHTML=cats.map(c=>`<button class="chip${c===cur?' on':''}" onclick="setCat('${c}')">${c}</button>`).join('')}
 function pr(p,k){if(p.soldout)return k==='m'?'<span class="so">Sold out</span>':`<div class="pr na">Sold out</div>`;if(!p.price)return k==='m'?'':`<div class="pr na">Price on DM</div>`;const f=n=>'₹'+Number(n).toLocaleString('en-IN'),o=off(p);return k==='m'?(o?`<s>${f(p.mrp)}</s>${f(p.price)}<em>${o}% OFF</em>`:f(p.price)):`<div class="pr">${o?`<s>${f(p.mrp)}</s>`:''}${f(p.price)}${o?`<em>${o}% OFF</em>`:''}</div>`}
-function grid(){$('grid').innerHTML=P.filter(p=>cur==='All'||p.cat===cur).map(p=>`<div class="card rv" onclick="openM('${p.code}')"><div class="ph"><img class="a" loading="lazy" src="${p.img}" alt="${p.name}"><img class="b" loading="lazy" src="${p.img2}" alt="${p.name} close-up"><span class="code">${p.code}</span><span class="dots"><i></i><i></i></span></div><h3>${p.name}</h3><p>${p.sub}</p>${pr(p,'card')}${addB(p)}</div>`).join('');obs()}
+function grid(){setTimeout(()=>typeof saveB==='function'&&saveB(),0);$('grid').innerHTML=P.filter(p=>cur==='All'||p.cat===cur).map(p=>`<div class="card rv" onclick="openM('${p.code}')"><div class="ph"><img class="a" loading="lazy" src="${p.img}" alt="${p.name}"><img class="b" loading="lazy" src="${p.img2}" alt="${p.name} close-up"><span class="code">${p.code}</span><span class="dots"><i></i><i></i></span></div><h3>${p.name}</h3><p>${p.sub}</p>${pr(p,'card')}${addB(p)}</div>`).join('');obs()}
 function setCat(c){cur=c;chips();grid()}
 function cardH(p){return `<div class="card rv" onclick="openM('${p.code}')"><div class="ph"><img class="a" loading="lazy" src="${p.img}" alt="${p.name}"><img class="b" loading="lazy" src="${p.img2}" alt="${p.name} close-up"><span class="code">${p.code}</span></div><h3>${p.name}</h3><p>${p.sub}</p>${pr(p,'card')}${addB(p)}</div>`}
-function moods(){document.querySelectorAll('.g4[data-m]').forEach(e=>{e.innerHTML=e.dataset.m.split(',').map(c=>P.find(p=>p.code===c)).filter(Boolean).map(cardH).join('')});obs()}
+function moods(){document.querySelectorAll('.g4[data-m]').forEach(e=>{e.innerHTML=e.dataset.m.split(',').map(c=>P.find(p=>p.code===c)).filter(Boolean).map(cardH).join('')});obs();if(typeof saveB==='function')saveB()}
 const bandI=document.querySelector('.band img');addEventListener('scroll',()=>{const r=bandI.parentElement.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight)bandI.style.transform=`translateY(${(r.top/innerHeight)*-6}%)`},{passive:true});
 let G=[],gi=0,gt;
 function go(d){show((gi+d+G.length)%G.length)}
@@ -253,10 +254,10 @@ $('mod').addEventListener('click',e=>{if(e.target.id==='mod')closeM()});
 
 /* ---- bag ---- */
 const fm=n=>'₹'+Number(n).toLocaleString('en-IN');let B=[];try{B=JSON.parse(localStorage.getItem('spk_bag')||'[]')}catch(e){}
-const byC=c=>P.find(p=>p.code===c),inBag=c=>B.some(i=>i.c===c);
-function addB(p){return p.price&&!p.soldout?`<br><button class="add${inBag(p.code)?' in':''}" data-c="${p.code}" onclick="event.stopPropagation();add('${p.code}')">${inBag(p.code)?'✓ In bag':'+ Add to bag'}</button>`:''}
+const byC=c=>P.find(p=>p.code===c),inBag=c=>B.some(i=>i.c===c),qOf=c=>(B.find(i=>i.c===c)||{q:0}).q,lbl=c=>qOf(c)?`✓ In bag · ${qOf(c)}  +`:'+ Add to bag';
+function addB(p){return p.price&&!p.soldout?`<br><button class="add${inBag(p.code)?' in':''}" data-c="${p.code}" onclick="event.stopPropagation();add('${p.code}')">${lbl(p.code)}</button>`:''}
 function saveB(){try{localStorage.setItem('spk_bag',JSON.stringify(B))}catch(e){}const n=B.reduce((a,i)=>a+i.q,0);$('bagN').textContent=n;$('bagN').classList.toggle('on',n>0);
- document.querySelectorAll('.add[data-c]').forEach(b=>{const x=inBag(b.dataset.c);b.classList.toggle('in',x);b.textContent=x?'✓ In bag':'+ Add to bag'})}
+ document.querySelectorAll('.add[data-c]').forEach(b=>{const x=inBag(b.dataset.c);b.classList.toggle('in',x);b.textContent=lbl(b.dataset.c)});document.querySelectorAll('.card .ph').forEach(ph=>{const c=(ph.querySelector('.code')||{}).textContent,q=c?qOf(c):0;let t=ph.querySelector('.inb');if(q){if(!t){t=document.createElement('span');t.className='inb';ph.appendChild(t)}t.textContent=q+' in bag'}else if(t)t.remove()})}
 function add(c){const p=byC(c);if(!p)return;const i=B.find(i=>i.c===c);if(i)i.q++;else B.push({c,q:1});saveB();const b=$('bagB');b.classList.remove('pop');void b.offsetWidth;b.classList.add('pop');toast(p.name+' added to bag')}
 const total=()=>B.reduce((a,i)=>a+byC(i.c).price*i.q,0);
 function drawBag(){B=B.filter(i=>byC(i.c));saveB();
